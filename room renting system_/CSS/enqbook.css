@@ -1,0 +1,267 @@
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", "sans-serif";
+    box-sizing: border-box;
+}
+#header{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+}
+#leftheader{
+    width: 65%;
+    float: left;
+   
+
+}
+
+#rightheader{
+    float: left;
+    width: 33%;
+  
+}
+*{
+    padding: 0;margin: 0;box-sizing: border-box;
+}
+#econtainer{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 5% auto 5%;
+    width: 100%;
+    height: 100%;
+}
+#edetails{
+    width: 80%;
+    height: 100px;
+    margin:auto;
+    display: flex;
+    box-sizing: border-box;
+    overflow: hidden;
+    flex-direction: column;
+    border-bottom: 1px solid gray;
+}
+#edetails p{
+    height: 100px;
+    text-align: left;
+    resize:both;
+}
+#edetails button{
+    height: 25px;
+    float: left;
+    font-family: cursive;
+    color: blue;
+    cursor: pointer;
+    position: relative;
+    left: -10px;
+    padding: 0;
+
+    box-shadow: none;
+    background-color:transparent;
+}
+
+
+
+
+  .eimg{
+    margin: auto;
+    width: 80%;
+    height: 450px;
+
+}
+.eimg img{
+    padding-bottom: 10px;
+    border-bottom: 1px solid gray;
+    height: 100%;
+    width: 100%;
+}
+.eimg img:hover{
+
+    height: 100%;
+    width: 100%;
+}
+.emain{
+    width: 80%;
+    height: 150px;
+    display: flex;
+    flex-direction: row;
+    margin:10px 10% 50px 10%;
+   
+    
+}
+ .ebox{
+    width: 100%;
+    display: flex;
+    
+} 
+
+.eroom{
+    width: 100%; 
+}
+th{
+    float: left;
+    display: inline;
+}
+td{
+    padding-right: 30px;
+}
+.eroom .name{
+    width: 25%;
+    font-weight: bold;
+
+}
+.eroom .value{
+    width: 70%;
+
+}
+.eowner{
+    width: 100%;
+} 
+.eowner .name{
+    width: 20%;
+    font-weight: bold;
+}
+.eowner .value{
+    width: 70%;
+}
+.value p{
+    width: 80%;
+    border-bottom: 1px solid black;
+}
+.copy{
+    background-color: rgb(16, 16, 16);
+    color: white;
+    text-align: center;
+}
+.copy p{
+    color: white;
+}
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", "sans-serif";
+    box-sizing: border-box;
+}
+.formerror {
+    color: red;
+}
+.show{
+   background-color: black;
+
+}
+
+ #rightheader #bcontainer{
+    
+    height: 100vh;
+    width: 100%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    background-position: center;
+    background-size: cover;
+    align-items: center;
+}
+#om button{
+    position: relative;
+    top: 600px;
+}
+
+#bcontainer #bformbox {
+    padding: 20px;
+    border: none;
+    box-shadow: 4px 4px 10px #030f16;
+    width: 80%;
+    position: absolute;
+    transform: translate(-50%, -50%);
+    background: rgb(248, 250, 248);
+    top: 50%;
+    left: 50%;
+    overflow: hidden;
+    text-align: center;
+}
+#bformbox h4 {
+    width: 100%;
+   margin-bottom: 10px;
+   
+}
+h4 p{
+    width: 50%;
+    border-bottom:2px solid black;
+    margin: auto;
+}
+span{
+    float: right;
+    cursor: pointer;
+    margin:0;
+    position: relative;
+    top:-10px;
+    right: -5px;
+    font-size:medium;
+    padding:0px 4px 0px 4px;
+    background-color: gray;
+    color: white;
+}
+
+input {
+    width: 90%;
+    min-width: 90%;
+    margin: 5px auto 4px 15px;
+    outline: 0;
+    padding: 10px 7px;
+    border: none;
+    border-bottom: 1px solid black;
+    background-color: rgb(249, 249, 244);
+    padding: 8px;
+    
+}
+.btn {
+    width: 100%;
+}
+
+.btnn{
+    cursor: pointer;
+    width: 70px;
+    text-align: center;
+    background-color: rgb(235, 232, 229);
+    height: 30px;
+    font-size: medium;
+    color: rgb(16, 15, 15);
+    box-shadow: 3px 3px 5px rgb(100, 100, 99);
+   
+}
+
+.btnn:hover {
+    font-size: medium;
+    color: white;
+    background-color: #201414;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+* {
+    padding: 0;
+    margin: 0;
+    font-family: "poppins", "sans-serif";
+    box-sizing: border-box;
+}
+.formerror {
+    color: red;
+}

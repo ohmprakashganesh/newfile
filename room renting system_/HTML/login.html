@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title></title>
+    <link rel="stylesheet" href="../CSS/dash.css">
+    <link rel="stylesheet" href="../CSS/secform.css">
+    <script
+      src="https://kit.fontawesome.com/f0ff125fe7.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+  <!-- How To Create Login & Registration Form Using HTML CSS And JavaScript -->
+  <body>
+    <div class="container">
+      <div class="form-box">
+        <h1 id="title">sign up</h1>
+        <form action="Anupama.html" method="post">
+          <div class="input-group">
+            <div class="input-field" id="namefield">
+              <i class="fa-solid fa-user"></i>
+              <input type="text" placeholder="user name " id="user" />
+              <p id="err1" class="error"></p>
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-envelope"></i>
+              <input type="email" placeholder="email address " id="email" />
+              <p id="err3" class="error"></p>
+            </div>
+            <div class="input-field">
+              <i class="fa-solid fa-key"></i>
+              <input type="password" placeholder="password " id="psd" />
+              <p id="err2" class="error"></p>
+            </div>
+            <div class="input-field" id="c">
+              <i class="fa-solid fa-key"></i>
+              <input
+                type="password"
+                placeholder="confirm password "
+                id="cpsd"
+              />
+              <p id="err4" class="error"></p>
+            </div>
+            <div id="frgt">
+              <a
+                href="https://www.bing.com/search?q=fontawesome.com&form=ANNTH1&refig=51010cb5eb93448894303e077d60e91e">
+                Forgot password</a
+              >
+            </div>
+          </div>
+          <div class="btn-field">
+            <button type="submit" id="signupbtn" onclick="return validation1()">
+              Sign Up
+            </button>
+            <button
+              type="submit"
+              id="signinbtn"
+              class="disable"
+              onclick="return validation2()"
+            >
+              Sign In
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+    <script>
+      let signupbtn = document.getElementById("signupbtn");
+      let signinbtn = document.getElementById("signinbtn");
+      let namefield = document.getElementById("namefield");
+      let title = document.getElementById("title");
+      let c = document.getElementById("c");
+      let frgt = document.getElementById("frgt");
+
+      signinbtn.onmouseover = function () {
+        namefield.style.height = "0px";
+        c.style.maxHeight = "0";
+        frgt.style.maxHeight = "60px";
+        title.innerHTML = "Sign In";
+        signupbtn.classList.add("disable");
+        signinbtn.classList.remove("disable");
+      };
+
+      signupbtn.onmouseover = function () {
+        namefield.style.height = "60px";
+        c.style.maxHeight = "60px";
+        frgt.style.maxHeight = "0px";
+        title.innerHTML = "Sign Up";
+        signupbtn.classList.remove("disable");
+        signinbtn.classList.add("disable");
+      };
+      function validation1() {
+        let name = document.querySelector("#user");
+        let email = document.querySelector("#email");
+        let psd = document.querySelector("#psd");
+        let cpsd = document.querySelector("#cpsd");
+        if (name.value == "") {
+          // name.focus();
+          document.querySelector("#err1").innerHTML = "*Required";
+          return false;
+        }
+        if (email.value == "") {
+          email.focus();
+          document.querySelector("#err3").innerHTML = "*Required";
+          return false;
+        }
+        if (psd.value == "") {
+          psd.focus();
+          document.querySelector("#err2").innerHTML = "*Required";
+          return false;
+        }
+        if (cpsd.value == "") {
+          cpsd.focus();
+          document.querySelector("#err4").innerHTML = "*Required";
+          return false;
+        }
+      }
+      function validation2() {
+        let email = document.querySelector("#email");
+        let psd = document.querySelector("#psd");
+        if (email.value == "") {
+          email.focus();
+          document.querySelector("#err3").innerHTML = "*Required";
+          return false;
+        }
+        if (psd.value == "") {
+          psd.focus();
+          document.querySelector("#err2").innerHTML = "*Required";
+          return false;
+        }
+      }
+    </script>
+  </body>
+</html>
